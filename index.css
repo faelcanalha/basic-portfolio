@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  outline: 0px;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+body {
+  background-color: #151515;
+  color: rgb(200, 200, 200);
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.container {
+  background-color: #151515;
+  height: calc(100vh - 100px);
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fill {
+  background-color: #202020;
+  height: 500px;
+  width: 500px;
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+}
+
+.perfil {
+  position: relative;
+  margin-top: 20px;
+  background-color: #151515;
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.perfil img {
+  position: absolute;
+  height: 140px;
+  width: 140px;
+  border-radius: 100%;
+}
+
+.name {
+  position: absolute;
+  font-size: 20px;
+  top: 160px;
+  font-weight: lighter;
+}
+
+.perfilOne {
+  position: relative;
+  top: 125px;
+  width: 140px;
+  height: 1.5px;
+  background-color: #252525;
+  border: none;
+}
+
+.modules {
+  position: absolute;
+  top: 230px;
+  left: 50px;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lang {
+  margin-top: 5px;
+  width: 25px;
+  transition: all 0.9s;
+}
+
+.tech {
+  margin-top: 5px;
+  width: 25px;
+  transition: all 0.9s;
+}
+
+.social {
+  cursor: pointer;
+  margin-top: 5px;
+  width: 25px;
+  transition: all 0.9s;
+}
+
+.item-3 a {
+  text-decoration: none;
+}
+
+.perfilOne {
+  animation: animacao 1.5s;
+}
+/* Animations */
+.img,
+.btn {
+  transition: all 0.9s;
+}
+
+.img:hover,
+.lang:hover,
+.tech:hover,
+.social:hover,
+.btn:hover {
+  transform: scaleX(1.1) scaleY(1.1);
+}
+@keyframes animacao {
+  0% {
+    transform: scaleX(0) scaleY(0);
+  }
+  100% {
+    transform: scaleX(1) scaleY(1);
+  }
+}
